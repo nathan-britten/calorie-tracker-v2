@@ -1,0 +1,25 @@
+{
+  "meals": [
+    {
+      "userid": 1,
+      "title": "Breaky",
+      "date": "22/02/21",
+      "foodid": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "id": "0"
+    }
+  ],
+  "food": [
+    {
+      "id": 0,
+      "name": "Milk",
+      "weight": "100g",
+      "calories": "12",
+      "userid": "109895156886596613941"
+    }
+  ]
+}

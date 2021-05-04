@@ -1,0 +1,36 @@
+.fadein {
+  animation: out 1.5s ease-in forwards;
+  transition: all .5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.food-items {
+  .food-item:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.food-item {
+  input {
+    min-width: 325px
+  }
+  .results {
+    z-index: 4;
+    background-color: white;
+    max-width: 325px;
+    .results-item {
+      &:hover {
+        background-color: rgba(211, 211, 211, 0.281);
+        cursor: pointer;
+      }
+    }
+  }
+}

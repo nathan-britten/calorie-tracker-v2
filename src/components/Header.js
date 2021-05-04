@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import GoogleAuth from './GoogleAuth';
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -9,7 +10,7 @@ const Header = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav w-100">
             <Link to="/" className="nav-item active">
               <div className="nav-link">Home</div>
             </Link>
@@ -22,6 +23,9 @@ const Header = () => {
             <Link to="/stats" className="nav-item active">
               <div className="nav-link">Stats</div>
             </Link>
+            <div className="nav-item ml-0 ml-md-auto">
+              <GoogleAuth />
+            </div>
         </ul>
       </div>
     </nav>
